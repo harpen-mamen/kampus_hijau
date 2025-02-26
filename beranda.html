@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Kampus Hijau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, rgba(34, 197, 94, 0.9), rgba(234, 88, 12, 0.9)), url('https://source.unsplash.com/1600x900/?green-campus');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            transition: all 0.3s ease-in-out;
+        }
+        .animate-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-green-50">
+
+    <!-- Header -->
+    <header class="bg-orange-700 text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">🌿 Kampus Hijau</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="beranda.html" class="hover:underline font-bold">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:underline">Tentang</a></li>
+                    <li><a href="program.html" class="hover:underline">Program</a></li>
+                    <li><a href="galeri.html" class="hover:underline">Galeri</a></li>
+                    <li><a href="kontak.html" class="hover:underline">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-24 px-6 relative">
+        <div class="animate-fade">
+            <h2 class="text-5xl font-bold mb-4">Selamat Datang di Kampus Hijau</h2>
+            <p class="text-lg max-w-2xl mx-auto">
+                Mewujudkan kampus yang lebih hijau dan berkelanjutan bersama UKM GeoTek POLNUSTAR.
+            </p>
+            <a href="program.html" class="mt-6 inline-block bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-orange-800 btn-hover">
+                Lihat Program Kami
+            </a>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">🌱 Tentang Kampus Hijau</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+            Kampus Hijau adalah gerakan yang digagas oleh UKM GeoTek POLNUSTAR untuk menciptakan lingkungan akademik yang lebih hijau dan sehat. 
+        </p>
+        <a href="tentang.html" class="text-green-600 font-semibold hover:underline block mt-4">Baca selengkapnya</a>
+    </section>
+
+    <!-- Keunggulan Kampus Hijau -->
+    <section id="keunggulan" class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">🌍 Keunggulan Kampus Hijau</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-lg font-bold text-green-600">🌿 Ramah Lingkungan</h3>
+                <p class="text-gray-700 mt-2">Mengurangi jejak karbon dengan penghijauan kampus.</p>
+            </div>
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-lg font-bold text-green-600">📚 Edukasi Berkelanjutan</h3>
+                <p class="text-gray-700 mt-2">Mengadakan seminar & workshop tentang lingkungan.</p>
+            </div>
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-lg font-bold text-green-600">🤝 Kolaborasi Mahasiswa</h3>
+                <p class="text-gray-700 mt-2">Melibatkan mahasiswa dalam proyek hijau kampus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">📸 Dokumentasi Kegiatan</h2>
+        <p class="text-gray-700">Lihat momen-momen terbaik dari kegiatan penghijauan di kampus.</p>
+        <a href="galeri.html" class="text-green-600 font-semibold hover:underline block mt-4">Lihat Galeri</a>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">📞 Hubungi Kami</h2>
+        <p class="text-gray-700">Jika Anda tertarik untuk berkolaborasi atau ingin tahu lebih lanjut, silakan hubungi kami.</p>
+        <a href="kontak.html" class="text-green-600 font-semibold hover:underline block mt-4">Formulir Kontak</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-700 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Kampus Hijau - UKM GeoTek POLNUSTAR. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
