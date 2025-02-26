@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Kampus Hijau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, rgba(34, 197, 94, 0.9), rgba(234, 88, 12, 0.9)), url('https://source.unsplash.com/1600x900/?forest,green-campus');
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-green-50">
+
+    <!-- Header -->
+    <header class="bg-orange-700 text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+           
+            <h1 class="text-2xl font-bold">🌿 Kampus Hijau</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="beranda.html" class="hover:underline">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:underline">Tentang</a></li>
+                    <li><a href="program.html" class="hover:underline">Program</a></li>
+                    <li><a href="galeri.html" class="hover:underline font-bold">Galeri</a></li>
+                    <li><a href="kontak.html" class="hover:underline">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-24 px-6 relative">
+        <h2 class="text-5xl font-bold mb-4 animate-fade">Galeri Kegiatan</h2>
+        <p class="text-lg max-w-3xl mx-auto">Dokumentasi momen terbaik dari berbagai kegiatan penghijauan di kampus.</p>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-6">📸 Dokumentasi Kegiatan</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?tree-planting" alt="Penanaman Pohon" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Penanaman Pohon</div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?recycle,environment" alt="Pengelolaan Sampah" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Pengelolaan Sampah</div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?students,green" alt="Mahasiswa Peduli Lingkungan" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Mahasiswa Peduli Lingkungan</div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?green-garden" alt="Taman Kampus" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Taman Kampus</div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?solar-panel" alt="Energi Terbarukan" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Energi Terbarukan</div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/400x300/?bicycle,eco" alt="Transportasi Hijau" class="w-full h-full object-cover rounded-lg shadow-lg">
+                <div class="gallery-overlay text-lg font-bold">Transportasi Hijau</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="aksi" class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">🌍 Bagikan Momen Hijau!</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+            Jika Anda memiliki dokumentasi kegiatan yang ingin dibagikan di sini, silakan kirimkan kepada kami!
+        </p>
+        <a href="kontak.html" class="mt-6 inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700">Hubungi Kami</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-700 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Kampus Hijau - UKM GeoTek POLNUSTAR. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
