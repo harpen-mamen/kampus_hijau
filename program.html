@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program - Kampus Hijau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, rgba(34, 197, 94, 0.9), rgba(234, 88, 12, 0.9)), url('https://source.unsplash.com/1600x900/?green-initiative,nature');
+            background-size: cover;
+            background-position: center;
+        }
+        .animate-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-green-50">
+
+    <!-- Header -->
+    <header class="bg-orange-700 text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            
+            <h1 class="text-2xl font-bold">🌿 Kampus Hijau</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="beranda.html" class="hover:underline">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:underline">Tentang</a></li>
+                    <li><a href="program.html" class="hover:underline font-bold">Program</a></li>
+                    <li><a href="galeri.html" class="hover:underline">Galeri</a></li>
+                    <li><a href="kontak.html" class="hover:underline">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white text-center py-24 px-6 relative">
+        <div class="animate-fade">
+            <h2 class="text-5xl font-bold mb-4">Program Kampus Hijau</h2>
+            <p class="text-lg max-w-3xl mx-auto">
+                Berbagai program inovatif untuk menciptakan lingkungan kampus yang lebih hijau, sehat, dan berkelanjutan.
+            </p>
+        </div>
+    </section>
+
+    <!-- Daftar Program -->
+    <section id="daftar-program" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-6">🌱 Daftar Program Penghijauan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Program 1: Penanaman Pohon -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">🌳 Penanaman Pohon</h3>
+                <p class="text-gray-700 mt-2">Menanam pohon di area kampus untuk meningkatkan kualitas udara dan keseimbangan ekosistem.</p>
+            </div>
+
+            <!-- Program 2: Pengelolaan Sampah -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">♻️ Pengelolaan Sampah</h3>
+                <p class="text-gray-700 mt-2">Mengembangkan sistem pemilahan sampah dan daur ulang untuk mengurangi limbah plastik di kampus.</p>
+            </div>
+
+            <!-- Program 3: Taman Kampus -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">🏡 Pembuatan Taman Kampus</h3>
+                <p class="text-gray-700 mt-2">Membangun taman hijau di berbagai sudut kampus sebagai ruang hijau bagi mahasiswa.</p>
+            </div>
+
+            <!-- Program 4: Energi Terbarukan -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">🔋 Energi Terbarukan</h3>
+                <p class="text-gray-700 mt-2">Menggunakan energi terbarukan seperti panel surya untuk mendukung fasilitas kampus.</p>
+            </div>
+
+            <!-- Program 5: Edukasi Lingkungan -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">📚 Edukasi Lingkungan</h3>
+                <p class="text-gray-700 mt-2">Mengadakan seminar dan workshop tentang isu lingkungan dan solusi keberlanjutan.</p>
+            </div>
+
+            <!-- Program 6: Transportasi Hijau -->
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-bold text-green-600">🚲 Transportasi Hijau</h3>
+                <p class="text-gray-700 mt-2">Mendorong penggunaan sepeda dan transportasi ramah lingkungan di dalam kampus.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="aksi" class="bg-gray-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-4">🌍 Bergabung dalam Aksi Hijau!</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+            Dukung kampus hijau dengan berpartisipasi dalam berbagai program keberlanjutan dan bersama kita wujudkan lingkungan yang lebih baik.
+        </p>
+        <a href="kontak.html" class="mt-6 inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700">Hubungi Kami</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-700 text-white text-center py-4 mt-10">
+        <p>&copy; 2025 Kampus Hijau - UKM GeoTek POLNUSTAR. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
